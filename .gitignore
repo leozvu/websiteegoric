@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+*.log
+*.tsbuildinfo
+
+.env
+.env.*
+!.env.example
+
+.codex-remote-attachments/
+.edge-*/
+egoric-*.png
