@@ -27,7 +27,7 @@ export function PageHero({ eyebrow, title, intro, stats, className }: PageHeroPr
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
         <div>
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-champagne">{eyebrow}</p>
-          <h1 className="max-w-5xl font-serif text-5xl font-semibold leading-[0.92] text-bone sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-5xl text-balance font-serif text-4xl font-semibold leading-[0.96] text-bone sm:text-6xl lg:text-7xl">
             {title}
           </h1>
         </div>
@@ -35,9 +35,9 @@ export function PageHero({ eyebrow, title, intro, stats, className }: PageHeroPr
           <div className="mb-6 hidden lg:block">
             <CinematicSignalMedia compact />
           </div>
-          <p className="text-base leading-8 text-silver">{intro}</p>
+          <p className="text-pretty text-base leading-8 text-silver">{intro}</p>
           {stats && (
-            <div className="mt-7 grid grid-cols-3 gap-3">
+            <div className="mt-7 grid gap-3 sm:grid-cols-3">
               {stats.map((stat) => (
                 <div key={stat.label} className="rounded border border-white/10 bg-obsidian/55 p-4">
                   <p className="font-serif text-3xl font-semibold text-champagne">{stat.value}</p>

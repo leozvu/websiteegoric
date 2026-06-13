@@ -10,14 +10,14 @@ export function TrustSection() {
             <ShieldCheck size={24} />
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-champagne">Nguyên Tắc Tin Cậy</p>
-            <h2 className="mt-4 font-serif text-4xl font-semibold text-bone sm:text-5xl">
-              Hỗ trợ chiến lược, không xây trên tuyên bố giả.
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-champagne">Trust Standard</p>
+            <h2 className="text-balance mt-4 font-serif text-4xl font-semibold text-bone sm:text-5xl">
+              Strategic support, không xây trên fake proof.
             </h2>
-            <p className="mt-5 max-w-4xl text-base leading-8 text-silver">
-              Egoric không xây chiến dịch dựa trên review giả, mạo danh, quấy rối hoặc thông tin sai lệch gây hại.
-              Chúng tôi tập trung vào đặt thông điệp chiến lược, thiết kế thảo luận, đọc cộng đồng và hỗ trợ
-              truyền thông có kiểm soát.
+            <p className="text-pretty mt-5 max-w-4xl text-base leading-8 text-silver">
+              Egoric không xây campaign trên review giả, mạo danh, quấy rối hoặc thông tin sai lệch gây hại.
+              Chúng tôi tập trung vào strategic placement, conversation design, community reading và controlled
+              communication support.
             </p>
           </div>
         </div>

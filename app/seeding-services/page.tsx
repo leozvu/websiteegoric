@@ -7,68 +7,68 @@ import { ServiceOverview } from "@/components/sections/service-overview";
 import { services } from "@/lib/content";
 
 export const metadata = {
-  title: "Dịch vụ Seeding",
+  title: "Seeding Services",
   description:
-    "Dịch vụ seeding ra mắt, seeding cộng đồng, seeding social proof, seeding nhận thức, hỗ trợ campaign và hỗ trợ danh tiếng."
+    "Launch seeding, community seeding, social proof seeding, perception seeding, campaign support và reputation support."
 };
 
 const packageFlow = [
-  "Brief mục tiêu truyền thông",
-  "Map khán giả và cộng đồng",
-  "Thiết kế góc thông điệp",
-  "Xây kịch bản seeding",
-  "Kích hoạt theo đợt",
-  "Theo dõi và báo cáo"
+  "Brief communication objective",
+  "Map audience & community",
+  "Design message angle",
+  "Build seeding script",
+  "Activate by wave",
+  "Monitor & report"
 ];
 
 export default function SeedingServicesPage() {
   return (
     <main>
       <PageHero
-        eyebrow="Dịch Vụ Seeding"
-        title="Các gói seeding chiến lược cho launch, social proof và nhận thức thị trường."
-        intro="Egoric chỉ tập trung vào seeding. Mỗi dịch vụ được xây để tạo lớp thảo luận đúng ngữ cảnh, có kiểm soát và có thể báo cáo."
+        eyebrow="Seeding Services"
+        title="Strategic seeding cho launch, social proof và market perception."
+        intro="Egoric chỉ tập trung vào seeding. Mỗi module được xây để tạo conversation đúng context, có kiểm soát và có thể report."
         stats={[
-          { value: "06", label: "Nhóm dịch vụ" },
-          { value: "VN", label: "Thị trường chính" },
-          { value: "100%", label: "Tập trung seeding" }
+          { value: "06", label: "Modules" },
+          { value: "VN", label: "Core market" },
+          { value: "100%", label: "Seeding focus" }
         ]}
       />
       <ServiceOverview />
 
       <SectionShell
-        eyebrow="Cách Chọn Dịch Vụ"
-        title="Chọn theo thời điểm campaign, không chọn theo số lượng bình luận."
-        intro="Nếu bạn chưa chắc nên bắt đầu từ đâu, Egoric sẽ đọc brief và đề xuất module phù hợp nhất với mục tiêu truyền thông."
+        eyebrow="How To Choose"
+        title="Chọn theo campaign moment, không chọn theo số lượng comment."
+        intro="Nếu bạn chưa chắc nên bắt đầu từ đâu, Egoric sẽ đọc brief và đề xuất module phù hợp nhất với communication objective."
       >
         <div className="grid gap-4 lg:grid-cols-3">
           {services.slice(0, 3).map((service) => (
             <article key={service.title} className="rounded border border-white/10 bg-white/[0.035] p-6">
-              <h2 className="font-serif text-3xl font-semibold text-bone">{service.title}</h2>
-              <p className="mt-4 text-sm leading-7 text-silver">{service.solves}</p>
+              <h2 className="text-balance font-serif text-3xl font-semibold text-bone">{service.title}</h2>
+              <p className="text-pretty mt-4 text-sm leading-7 text-silver">{service.solves}</p>
             </article>
           ))}
         </div>
         <div className="mt-4 grid gap-4 lg:grid-cols-3">
           {services.slice(3).map((service) => (
             <article key={service.title} className="rounded border border-white/10 bg-white/[0.035] p-6">
-              <h2 className="font-serif text-3xl font-semibold text-bone">{service.title}</h2>
-              <p className="mt-4 text-sm leading-7 text-silver">{service.solves}</p>
+              <h2 className="text-balance font-serif text-3xl font-semibold text-bone">{service.title}</h2>
+              <p className="text-pretty mt-4 text-sm leading-7 text-silver">{service.solves}</p>
             </article>
           ))}
         </div>
       </SectionShell>
 
       <SectionShell
-        eyebrow="Luồng Dịch Vụ"
-        title="Từ brief đến báo cáo, mọi thứ cần có cấu trúc."
-        intro="Một campaign seeding tốt không bắt đầu bằng việc viết comment. Nó bắt đầu bằng việc hiểu mục tiêu và thị trường."
+        eyebrow="Service Flow"
+        title="Từ brief đến report, mọi thứ cần structure."
+        intro="Một seeding campaign tốt không bắt đầu bằng việc viết comment. Nó bắt đầu bằng việc hiểu objective và market."
       >
-        <div className="grid gap-3 md:grid-cols-6">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-3">
           {packageFlow.map((item, index) => (
             <div key={item} className="rounded border border-white/10 bg-obsidian/60 p-4">
               <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
-              <p className="mt-4 text-sm font-medium leading-6 text-bone">{item}</p>
+              <p className="phrase-lock mt-4 text-sm font-medium leading-6 text-bone">{item}</p>
             </div>
           ))}
         </div>
@@ -79,14 +79,14 @@ export default function SeedingServicesPage() {
       <section className="px-5 py-20 sm:px-8">
         <div className="glass mx-auto flex max-w-7xl flex-col gap-6 rounded p-8 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-champagne">Bước Tiếp Theo</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold text-bone">Gửi brief, Egoric sẽ đề xuất lớp thảo luận.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-champagne">Next Step</p>
+            <h2 className="text-balance mt-3 font-serif text-4xl font-semibold text-bone">Gửi brief, Egoric sẽ đề xuất conversation layer.</h2>
           </div>
           <Link
             href="/contact"
             className="button-shine inline-flex items-center justify-center gap-3 rounded-full bg-champagne px-6 py-4 text-sm font-bold text-obsidian"
           >
-            Lên kế hoạch seeding
+            Gửi brief seeding
             <ArrowRight size={17} />
           </Link>
         </div>

@@ -21,11 +21,11 @@ export function SectionShell({ eyebrow, title, intro, className, id, children }:
               </p>
             )}
             {title && (
-              <h2 className="font-serif text-4xl font-semibold leading-[0.95] text-bone sm:text-5xl lg:text-7xl">
+              <h2 className="text-balance font-serif text-4xl font-semibold leading-[0.98] text-bone sm:text-5xl lg:text-6xl xl:text-7xl">
                 {title}
               </h2>
             )}
-            {intro && <p className="mt-6 text-base leading-8 text-silver sm:text-lg">{intro}</p>}
+            {intro && <p className="text-pretty mt-6 text-base leading-8 text-silver sm:text-lg">{intro}</p>}
           </div>
         )}
         {children}

@@ -3,6 +3,7 @@ import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { PageTransition } from "@/components/motion/page-transition";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
 
 const editorial = Playfair_Display({
@@ -19,11 +20,11 @@ const sans = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   title: {
-    default: "Egoric Agency | Seeding Chiến Lược & Kích Hoạt Thảo Luận",
+    default: "Egoric Agency | Strategic Seeding Studio",
     template: "%s | Egoric Agency"
   },
   description:
-    "Egoric Agency thiết kế chiến dịch seeding chiến lược, seeding cộng đồng, social proof và lớp thảo luận có kiểm soát cho ra mắt sản phẩm, campaign và nhận thức thương hiệu.",
+    "Egoric Agency thiết kế strategic seeding campaign, community seeding, social proof và conversation layer có kiểm soát cho launch, campaign và market perception.",
   keywords: [
     "agency seeding chiến lược",
     "dịch vụ seeding",
@@ -31,16 +32,16 @@ export const metadata: Metadata = {
     "seeding cộng đồng",
     "seeding ra mắt sản phẩm",
     "seeding social proof",
-    "kích hoạt thảo luận",
-    "hỗ trợ nhận thức thương hiệu",
+    "conversation seeding",
+    "market perception support",
     "seeding campaign",
     "agency seeding Việt Nam",
     "marketing seeding service"
   ],
   openGraph: {
-    title: "Egoric Agency | Seeding Chiến Lược & Kích Hoạt Thảo Luận",
+    title: "Egoric Agency | Strategic Seeding Studio",
     description:
-      "Tạo momentum thảo luận có kiểm soát cho launch, cộng đồng và nhận thức thị trường.",
+      "Tạo conversation momentum có kiểm soát cho launch, community và market perception.",
     type: "website"
   }
 };
@@ -56,7 +57,7 @@ export default function RootLayout({
         <SmoothScroll />
         <div className="noise" aria-hidden="true" />
         <SiteHeader />
-        {children}
+        <PageTransition>{children}</PageTransition>
         <SiteFooter />
       </body>
     </html>

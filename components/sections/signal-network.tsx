@@ -5,12 +5,12 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 const nodes = [
-  { x: "18%", y: "30%", label: "Khán giả" },
-  { x: "42%", y: "18%", label: "Góc nói" },
-  { x: "68%", y: "28%", label: "Cộng đồng" },
-  { x: "30%", y: "58%", label: "Thời điểm" },
+  { x: "18%", y: "30%", label: "Audience" },
+  { x: "42%", y: "18%", label: "Message Angle" },
+  { x: "68%", y: "28%", label: "Community" },
+  { x: "30%", y: "58%", label: "Timing" },
   { x: "56%", y: "66%", label: "Sentiment" },
-  { x: "80%", y: "54%", label: "Báo cáo" }
+  { x: "80%", y: "54%", label: "Reporting" }
 ];
 
 export function SignalNetwork() {

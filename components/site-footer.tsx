@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div>
           <p className="font-serif text-3xl font-semibold text-bone">Egoric Agency</p>
           <p className="mt-4 max-w-xl text-sm leading-7 text-silver">
-            Studio Seeding Chiến Lược & Kích Hoạt Thảo Luận. Egoric tạo momentum thảo luận
-            có kiểm soát cho launch, cộng đồng và nhận thức thị trường.
+            Strategic Seeding Studio. Egoric tạo conversation momentum có kiểm soát cho launch,
+            community và market perception.
           </p>
         </div>
         <nav className="grid grid-cols-2 gap-3 text-sm text-silver sm:grid-cols-3">

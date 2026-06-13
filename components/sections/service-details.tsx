@@ -5,9 +5,9 @@ import { services } from "@/lib/content";
 export function ServiceDetails() {
   return (
     <SectionShell
-      eyebrow="Chi Tiết Dịch Vụ"
-      title="Các module seeding cho từng thời điểm campaign."
-      intro="Mỗi dịch vụ được xây quanh audience mapping, góc thông điệp, logic đặt nội dung, thời điểm và báo cáo."
+      eyebrow="Service Detail"
+      title="Các seeding module cho từng moment của campaign."
+      intro="Mỗi module được xây quanh audience mapping, message angle, placement logic, timing và reporting."
     >
       <div className="space-y-5">
         {services.map((service, index) => (
@@ -17,13 +17,13 @@ export function ServiceDetails() {
                 <span className="text-xs font-semibold uppercase tracking-[0.28em] text-champagne">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <h3 className="mt-5 font-serif text-4xl font-semibold text-bone">{service.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-silver">{service.summary}</p>
+                <h3 className="text-balance mt-5 font-serif text-4xl font-semibold text-bone">{service.title}</h3>
+                <p className="text-pretty mt-4 text-sm leading-7 text-silver">{service.summary}</p>
                 <div className="mt-7">
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-silver">Phù hợp cho</p>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-silver">Best for</p>
                   <div className="flex flex-wrap gap-2">
                     {service.bestFor.map((item) => (
-                      <span key={item} className="rounded-full border border-white/10 px-3 py-2 text-xs text-silver">
+                      <span key={item} className="phrase-lock rounded-full border border-white/10 px-3 py-2 text-xs text-silver">
                         {item}
                       </span>
                     ))}
@@ -32,11 +32,11 @@ export function ServiceDetails() {
               </div>
               <div>
                 <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-champagne">
-                  Khách hàng nhận
+                  Client receives
                 </p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   {service.receives.map((item) => (
-                    <div key={item} className="rounded border border-white/10 bg-obsidian/50 p-4 text-sm text-bone">
+                    <div key={item} className="phrase-lock rounded border border-white/10 bg-obsidian/50 p-4 text-sm text-bone">
                       {item}
                     </div>
                   ))}

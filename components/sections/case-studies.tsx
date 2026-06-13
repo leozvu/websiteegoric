@@ -7,8 +7,8 @@ export function CaseStudies() {
     <SectionShell
       id="case-studies"
       eyebrow="Case Study"
-      title="Các case mẫu, sẵn sàng thay bằng dữ liệu campaign thật."
-      intro="Case dạng editorial để thể hiện loại chuyển động Egoric tạo ra, không hứa hẹn viral giả."
+      title="Case format sẵn sàng thay bằng dữ liệu campaign thật."
+      intro="Editorial case để thể hiện loại movement Egoric tạo ra, không hứa viral và không phóng đại signal."
     >
       <div className="grid gap-4 lg:grid-cols-3">
         {caseStudies.map((study, index) => (
@@ -18,21 +18,21 @@ export function CaseStudies() {
                 <div className="mb-10 h-40 rounded bg-[radial-gradient(circle_at_30%_30%,rgba(200,169,106,0.24),transparent_32%),radial-gradient(circle_at_70%_60%,rgba(76,141,255,0.18),transparent_30%),#08090b]">
                   <div className="grid h-full place-items-center">
                     <span className="text-xs uppercase tracking-[0.28em] text-silver">
-                      Tín hiệu {String(index + 1).padStart(2, "0")}
+                      Signal {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
                 </div>
-                <h3 className="font-serif text-3xl font-semibold text-bone">{study.title}</h3>
+                <h3 className="text-balance font-serif text-3xl font-semibold text-bone">{study.title}</h3>
               </div>
               <div className="mt-8 space-y-5 text-sm leading-7 text-silver">
                 <p>
-                  <span className="text-bone">Bài toán:</span> {study.challenge}
+                  <span className="text-bone">Challenge:</span> {study.challenge}
                 </p>
                 <p>
-                  <span className="text-bone">Cách làm:</span> {study.move}
+                  <span className="text-bone">Move:</span> {study.move}
                 </p>
                 <p>
-                  <span className="text-bone">Kết quả:</span> {study.outcome}
+                  <span className="text-bone">Signal:</span> {study.outcome}
                 </p>
               </div>
             </article>
