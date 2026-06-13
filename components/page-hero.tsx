@@ -24,7 +24,7 @@ export function PageHero({ eyebrow, title, intro, stats, className }: PageHeroPr
         className="absolute right-0 top-16 hidden h-[520px] w-[62vw] object-cover opacity-20 mix-blend-screen motion-reduce:hidden lg:block"
       />
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-champagne/45 to-transparent" />
-      <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+      <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div>
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-champagne">{eyebrow}</p>
           <h1 className="max-w-5xl text-balance font-serif text-4xl font-semibold leading-[0.96] text-bone sm:text-6xl lg:text-7xl">
