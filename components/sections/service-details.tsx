@@ -9,6 +9,12 @@ export function ServiceDetails() {
       title="Các seeding module cho từng moment của campaign."
       intro="Mỗi module được xây quanh audience mapping, message angle, placement logic, timing và reporting."
     >
+      <Reveal>
+        <div className="mb-6 rounded border border-champagne/20 bg-champagne/10 p-5 text-sm leading-7 text-bone">
+          Egoric không bán gói “bao nhiêu comment”. Mỗi module bắt đầu từ objective, audience context,
+          risk boundary và signal cần tạo ra cho campaign.
+        </div>
+      </Reveal>
       <div className="space-y-5">
         {services.map((service, index) => (
           <Reveal key={service.title} delay={index * 0.035}>

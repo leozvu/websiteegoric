@@ -21,7 +21,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Send brief. Build momentum."
-        intro="Form này giúp Egoric hiểu objective, audience, channel, timing và risk trước khi đề xuất conversation layer cho campaign."
+        intro="Form này giúp Egoric hiểu objective, audience, channel, timing và risk trước khi đề xuất seeding direction cho campaign."
         stats={[
           { value: "10", label: "Brief fields" },
           { value: "01", label: "Core objective" },

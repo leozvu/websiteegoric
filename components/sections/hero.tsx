@@ -81,7 +81,7 @@ export function Hero() {
         </div>
 
         <motion.div
-          className="relative mx-auto min-h-[420px] w-full max-w-[620px] sm:min-h-[560px] lg:min-h-[640px]"
+          className="relative mx-auto hidden min-h-[560px] w-full max-w-[620px] md:block lg:min-h-[640px]"
           initial={{ opacity: 0, x: 42, scale: 0.97 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
@@ -93,7 +93,6 @@ export function Hero() {
               src="/media/egoric-signal-film.webp"
               alt=""
               fill
-              priority
               sizes="(min-width: 1024px) 46vw, 92vw"
               className="scale-110 object-cover opacity-80 saturate-[0.78]"
             />
@@ -135,15 +134,15 @@ export function Hero() {
           </motion.div>
           <div className="absolute bottom-3 left-1/2 grid w-[92%] -translate-x-1/2 gap-3 rounded-[1.45rem] border border-white/10 bg-white/[0.055] p-3 backdrop-blur-xl sm:grid-cols-3">
             {["Audience map", "Message angle", "Sentiment scan"].map((item, index) => (
-                <motion.div
-                  key={item}
-                  className="rounded-full border border-white/10 bg-obsidian/60 px-4 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.13em] text-bone"
-                  animate={shouldReduceMotion ? undefined : { opacity: [0.58, 1, 0.58] }}
-                  transition={shouldReduceMotion ? undefined : { duration: 3.8, repeat: Infinity, delay: index * 0.45 }}
-                >
-                  {item}
-                </motion.div>
-              ))}
+              <motion.div
+                key={item}
+                className="rounded-full border border-white/10 bg-obsidian/60 px-4 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.13em] text-bone"
+                animate={shouldReduceMotion ? undefined : { opacity: [0.58, 1, 0.58] }}
+                transition={shouldReduceMotion ? undefined : { duration: 3.8, repeat: Infinity, delay: index * 0.45 }}
+              >
+                {item}
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>

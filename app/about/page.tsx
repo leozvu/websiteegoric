@@ -11,7 +11,7 @@ export const metadata = {
 const principles = [
   {
     title: "Single focus: seeding",
-    copy: "Egoric không định vị như full-service agency. Chúng tôi build conversation layer quanh launch, campaign, community và perception."
+    copy: "Egoric không định vị như full-service agency. Chúng tôi build controlled market signal quanh launch, campaign, community và perception."
   },
   {
     title: "Vietnam context first",

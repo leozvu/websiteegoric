@@ -74,7 +74,7 @@ export const services = [
   {
     title: "Campaign Support Seeding",
     summary: "Gia cố conversation quanh ads, PR, KOL/KOC, livestream, event hoặc product drop.",
-    solves: "Campaign có reach nhưng conversation layer còn mỏng và thiếu chiều sâu.",
+    solves: "Campaign có reach nhưng market signal còn mỏng và thiếu chiều sâu.",
     does: "Egoric support trước, trong và sau campaign quanh các key media asset.",
     useCase: "Paid media tạo reach nhưng comment quality và discussion depth còn thấp.",
     receives: [
@@ -162,7 +162,7 @@ export const caseStudies = [
   {
     title: "Campaign Conversation Support",
     challenge: "Một paid media campaign có reach nhưng thiếu quality conversation.",
-    move: "Egoric thêm seeding layer quanh key post, community context và objection response angle.",
+    move: "Egoric thêm controlled seeding path quanh key post, community context và objection response angle.",
     outcome: "Comment quality tốt hơn, discussion depth sâu hơn và campaign có conversation momentum rõ hơn."
   }
 ];

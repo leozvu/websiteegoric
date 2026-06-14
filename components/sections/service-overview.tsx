@@ -7,7 +7,7 @@ export function ServiceOverview() {
     <SectionShell
       id="services"
       eyebrow="What Egoric Does"
-      title="Chúng tôi build conversation layer phía sau campaign của bạn."
+      title="Chúng tôi build market signal phía sau campaign của bạn."
       intro="Sáu seeding module tập trung. Không full-service marketing, không spam rẻ tiền, không activity rỗng."
     >
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

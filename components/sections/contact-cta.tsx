@@ -13,7 +13,7 @@ export function ContactCta() {
         </h2>
         <p className="text-pretty mx-auto mt-7 max-w-3xl text-lg leading-8 text-silver">
           Cho chúng tôi biết bạn đang launch gì, cần impact nhóm nào và muốn xây perception ra sao.
-          Egoric sẽ map audience, channel, risk và đề xuất conversation layer phía sau campaign.
+          Egoric sẽ map audience, channel, risk và đề xuất seeding direction phía sau campaign.
         </p>
         <div className="mx-auto mt-7 grid max-w-3xl gap-3 text-left sm:grid-cols-3">
           {["Send context", "Map signal path", "Receive sprint direction"].map((item, index) => (

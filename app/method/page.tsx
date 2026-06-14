@@ -24,7 +24,7 @@ export default function MethodPage() {
       <PageHero
         eyebrow="Egoric Method"
         title="Seeding system phải được design trước khi activate."
-        intro="Egoric dùng process sáu bước để biến communication objective thành conversation layer có thể control, monitor và optimize."
+        intro="Egoric dùng process sáu bước để biến communication objective thành seeding system có thể control, monitor và optimize."
         stats={[
           { value: "06", label: "Steps" },
           { value: "03", label: "Control layers" },

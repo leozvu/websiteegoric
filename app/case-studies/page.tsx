@@ -35,7 +35,7 @@ export default function CaseStudiesPage() {
       <SectionShell
         eyebrow="Scenario Structure"
         title="Mỗi engagement nên chứng minh movement, không chỉ activity count."
-        intro="Một engagement tốt cần cho thấy communication problem, cách Egoric design conversation layer và market signal sau khi triển khai."
+        intro="Một engagement tốt cần cho thấy communication problem, cách Egoric design seeding path và market signal sau khi triển khai."
       >
         <div className="grid gap-4 lg:grid-cols-3">
           {caseStudies.map((study, index) => (
