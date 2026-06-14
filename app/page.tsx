@@ -1,5 +1,6 @@
 import { CaseStudies } from "@/components/sections/case-studies";
 import { ContactCta } from "@/components/sections/contact-cta";
+import { DodsDefinition } from "@/components/sections/dods-definition";
 import { FounderNote } from "@/components/sections/founder-note";
 import { Hero } from "@/components/sections/hero";
 import { MethodTimeline } from "@/components/sections/method-timeline";
@@ -17,6 +18,7 @@ export default function Home() {
     <main>
       <Hero />
       <Statement />
+      <DodsDefinition />
       <ServiceOverview />
       <WhoNeedsThis />
       <MethodTimeline />

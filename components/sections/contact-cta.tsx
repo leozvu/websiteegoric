@@ -13,8 +13,16 @@ export function ContactCta() {
         </h2>
         <p className="text-pretty mx-auto mt-7 max-w-3xl text-lg leading-8 text-silver">
           Cho chúng tôi biết bạn đang launch gì, cần impact nhóm nào và muốn xây perception ra sao.
-          Egoric sẽ thiết kế conversation layer phía sau campaign.
+          Egoric sẽ map audience, channel, risk và đề xuất conversation layer phía sau campaign.
         </p>
+        <div className="mx-auto mt-7 grid max-w-3xl gap-3 text-left sm:grid-cols-3">
+          {["Send context", "Map signal path", "Receive sprint direction"].map((item, index) => (
+            <div key={item} className="rounded border border-white/10 bg-white/[0.035] p-4 text-sm font-medium text-bone">
+              <span className="mb-3 block text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
+              {item}
+            </div>
+          ))}
+        </div>
         <Link
           href="/contact"
           className="button-shine mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-champagne px-7 py-4 text-sm font-bold text-obsidian shadow-glow transition hover:bg-bone"

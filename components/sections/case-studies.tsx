@@ -6,9 +6,9 @@ export function CaseStudies() {
   return (
     <SectionShell
       id="case-studies"
-      eyebrow="Case Study"
-      title="Case format sẵn sàng thay bằng dữ liệu campaign thật."
-      intro="Editorial case để thể hiện loại movement Egoric tạo ra, không hứa viral và không phóng đại signal."
+      eyebrow="Engagement Scenarios"
+      title="Các tình huống Egoric được thiết kế để xử lý."
+      intro="Scenario dưới đây mô tả loại market movement Egoric tạo ra: rõ challenge, rõ move, rõ signal cần quan sát. Không hứa viral và không phóng đại proof."
     >
       <div className="grid gap-4 lg:grid-cols-3">
         {caseStudies.map((study, index) => (
@@ -18,7 +18,7 @@ export function CaseStudies() {
                 <div className="mb-10 h-40 rounded bg-[radial-gradient(circle_at_30%_30%,rgba(200,169,106,0.24),transparent_32%),radial-gradient(circle_at_70%_60%,rgba(76,141,255,0.18),transparent_30%),#08090b]">
                   <div className="grid h-full place-items-center">
                     <span className="text-xs uppercase tracking-[0.28em] text-silver">
-                      Signal {String(index + 1).padStart(2, "0")}
+                      Scenario {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
                 </div>

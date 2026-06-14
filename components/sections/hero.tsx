@@ -1,18 +1,29 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { CinematicSignalMedia } from "@/components/cinematic-signal-media";
-import { SignalNetwork } from "@/components/sections/signal-network";
 
 export function Hero() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
-    <section className="relative flex min-h-screen items-end overflow-hidden px-5 pb-14 pt-32 sm:px-8 lg:pb-20">
-      <SignalNetwork />
-      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-obsidian to-transparent" />
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 lg:grid-cols-2 lg:items-end">
-        <div>
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-obsidian px-5 pb-16 pt-32 sm:px-8 lg:pb-20 lg:pt-28">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_42%,rgba(200,169,106,0.14),transparent_28rem),radial-gradient(circle_at_18%_18%,rgba(255,255,255,0.055),transparent_24rem),linear-gradient(180deg,rgba(5,5,6,0)_0%,#050506_94%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.028)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.028)_1px,transparent_1px)] bg-[size:92px_92px] opacity-35" />
+      <motion.div
+        className="pointer-events-none absolute left-1/2 top-[45%] hidden -translate-x-1/2 select-none whitespace-nowrap font-sans text-[18vw] font-black uppercase leading-none tracking-[-0.08em] text-bone/[0.045] lg:block"
+        initial={{ opacity: 0, x: "-47%" }}
+        animate={{ opacity: 1, x: "-50%" }}
+        transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+      >
+        Seeding
+      </motion.div>
+      <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-obsidian to-transparent" />
+
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+        <div className="max-w-3xl">
           <motion.p
             className="mb-6 text-xs font-semibold uppercase tracking-[0.34em] text-champagne"
             initial={{ opacity: 0, y: 18 }}
@@ -21,16 +32,30 @@ export function Hero() {
           >
             Strategic Seeding Studio
           </motion.p>
-          <h1 className="max-w-5xl text-balance font-serif text-5xl font-semibold leading-[0.92] text-bone sm:text-7xl lg:text-8xl xl:text-[7.2rem]">
-            Seeding tạo market conversation cho brand cần momentum.
+          <h1
+            className="font-serif text-[clamp(3.35rem,7.1vw,6.55rem)] font-semibold leading-[0.91] text-bone"
+            aria-label="Seeding tạo market conversation có kiểm soát."
+          >
+            <span className="block whitespace-nowrap" aria-hidden="true">
+              Seeding tạo{" "}
+            </span>
+            <span className="block whitespace-nowrap" aria-hidden="true">
+              market{" "}
+            </span>
+            <span className="block whitespace-nowrap" aria-hidden="true">
+              conversation{" "}
+            </span>
+            <span className="block whitespace-nowrap" aria-hidden="true">
+              có kiểm soát.
+            </span>
           </h1>
           <motion.p
-            className="text-pretty mt-8 max-w-2xl text-lg leading-8 text-silver sm:text-xl"
+            className="text-pretty mt-8 max-w-xl text-lg leading-8 text-silver sm:text-xl"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.65 }}
           >
-            Egoric Agency thiết kế strategic seeding campaign để brand đi vào đúng community,
+            Egoric thiết kế seeding campaign để brand đi vào đúng community,
             tạo social proof và điều hướng market perception rõ ràng.
           </motion.p>
           <motion.div
@@ -54,39 +79,71 @@ export function Hero() {
             </Link>
           </motion.div>
         </div>
+
         <motion.div
-          className="glass relative hidden min-h-[560px] overflow-hidden rounded p-6 lg:block"
-          initial={{ opacity: 0, x: 42 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.4 }}
+          className="relative mx-auto min-h-[420px] w-full max-w-[620px] sm:min-h-[560px] lg:min-h-[640px]"
+          initial={{ opacity: 0, x: 42, scale: 0.97 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          transition={{ duration: 1, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          aria-hidden="true"
         >
-          <div className="flex items-center justify-between border-b border-white/10 pb-5 text-xs uppercase tracking-[0.24em] text-silver">
-            <span>Conversation layer</span>
-            <span className="text-champagne">Live signal</span>
+          <div className="absolute inset-4 rounded-[2rem] border border-white/10 bg-white/[0.025] shadow-[0_34px_120px_rgba(0,0,0,0.45)] backdrop-blur-sm" />
+          <div className="absolute inset-x-0 top-8 mx-auto h-[78%] w-[82%] overflow-hidden rounded-[2rem] border border-white/10 bg-obsidian shadow-glow">
+            <Image
+              src="/media/egoric-signal-film.webp"
+              alt=""
+              fill
+              priority
+              sizes="(min-width: 1024px) 46vw, 92vw"
+              className="scale-110 object-cover opacity-80 saturate-[0.78]"
+            />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_36%,transparent,rgba(5,5,6,0.72)_68%),linear-gradient(180deg,rgba(5,5,6,0.18),rgba(5,5,6,0.88))]" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(255,255,255,0.035),transparent)] bg-[length:100%_8px] opacity-25" />
+            <motion.div
+              className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-champagne/25"
+              animate={shouldReduceMotion ? undefined : { scale: [0.86, 1.24, 0.86], opacity: [0.22, 0.5, 0.22] }}
+              transition={shouldReduceMotion ? undefined : { duration: 5.4, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.div
+              className="absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/10 blur-3xl"
+              animate={shouldReduceMotion ? undefined : { opacity: [0.22, 0.48, 0.22] }}
+              transition={shouldReduceMotion ? undefined : { duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <Image
+              src="/brand/egoric-logo.jpg"
+              alt=""
+              width={360}
+              height={206}
+              className="absolute left-1/2 top-1/2 w-64 -translate-x-1/2 -translate-y-1/2 invert opacity-[0.88] mix-blend-screen sm:w-80"
+            />
+            <div className="absolute inset-x-6 bottom-6 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
           </div>
-          <div className="mt-6">
-            <CinematicSignalMedia compact />
-          </div>
-          <div className="mt-7 space-y-4">
-            {["Audience mapped", "Message angle tested", "Community context locked", "Sentiment scan live"].map(
-              (item, index) => (
+
+          <motion.div
+            className="absolute left-0 top-20 rounded-full border border-white/15 bg-bone/90 px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] text-obsidian shadow-[0_18px_60px_rgba(0,0,0,0.28)] backdrop-blur sm:left-4"
+            animate={shouldReduceMotion ? undefined : { y: [0, -10, 0] }}
+            transition={shouldReduceMotion ? undefined : { duration: 5.2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            Conversation layer
+          </motion.div>
+          <motion.div
+            className="absolute right-0 top-36 rounded-full border border-champagne/30 bg-obsidian/78 px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] text-champagne shadow-glow backdrop-blur sm:right-5"
+            animate={shouldReduceMotion ? undefined : { y: [0, 12, 0] }}
+            transition={shouldReduceMotion ? undefined : { duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
+          >
+            Live signal
+          </motion.div>
+          <div className="absolute bottom-3 left-1/2 grid w-[92%] -translate-x-1/2 gap-3 rounded-[1.45rem] border border-white/10 bg-white/[0.055] p-3 backdrop-blur-xl sm:grid-cols-3">
+            {["Audience map", "Message angle", "Sentiment scan"].map((item, index) => (
                 <motion.div
                   key={item}
-                  className="flex items-center justify-between rounded border border-white/10 bg-white/[0.035] p-4"
-                  animate={{ opacity: [0.55, 1, 0.55] }}
-                  transition={{ duration: 3, repeat: Infinity, delay: index * 0.5 }}
+                  className="rounded-full border border-white/10 bg-obsidian/60 px-4 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.13em] text-bone"
+                  animate={shouldReduceMotion ? undefined : { opacity: [0.58, 1, 0.58] }}
+                  transition={shouldReduceMotion ? undefined : { duration: 3.8, repeat: Infinity, delay: index * 0.45 }}
                 >
-                  <span className="phrase-lock text-sm text-bone">{item}</span>
-                  <span className="h-2 w-2 rounded-full bg-champagne shadow-glow" />
+                  {item}
                 </motion.div>
-              )
-            )}
-          </div>
-          <div className="mt-6 rounded border border-signal/20 bg-signal/10 p-5">
-            <p className="text-xs uppercase tracking-[0.18em] text-silver">Core line</p>
-            <p className="text-balance mt-3 font-serif text-3xl leading-none text-bone">
-              Egoric không bán noise. Egoric build conversation momentum có kiểm soát.
-            </p>
+              ))}
           </div>
         </motion.div>
       </div>

@@ -1,3 +1,4 @@
+import { ContactBriefForm } from "@/components/contact-brief-form";
 import { PageHero } from "@/components/page-hero";
 import { SectionShell } from "@/components/section-shell";
 
@@ -5,9 +6,6 @@ export const metadata = {
   title: "Contact",
   description: "Gửi campaign brief để lên kế hoạch seeding cùng Egoric Agency."
 };
-
-const inputClass =
-  "w-full rounded border border-white/10 bg-obsidian/70 px-4 py-4 text-sm text-bone outline-none transition placeholder:text-silver/55 focus:border-champagne/70";
 
 const prepItems = [
   "Bạn đang launch gì?",
@@ -49,67 +47,9 @@ export default function ContactPage() {
       <SectionShell
         eyebrow="Campaign Brief"
         title="Plan a seeding sprint."
-        intro="Chia sẻ campaign context. Egoric sẽ dùng thông tin này để hiểu audience, channel, timing, risk level và conversation layer bạn cần."
+        intro="Chia sẻ campaign context. Form sẽ tạo một brief sạch để bạn gửi qua email, Zalo hoặc kênh liên hệ ưu tiên với Egoric."
       >
-        <form className="glass grid gap-5 rounded p-6 md:grid-cols-2 md:p-8">
-          <label className="grid gap-2 text-sm font-medium text-bone">
-            Họ tên
-            <input className={inputClass} placeholder="Tên của bạn" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone">
-            Công ty
-            <input className={inputClass} placeholder="Tên công ty hoặc thương hiệu" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone md:col-span-2">
-            Contact info
-            <input className={inputClass} placeholder="Email, số điện thoại, Zalo hoặc kênh liên hệ ưu tiên" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone md:col-span-2">
-            Bạn đang launch hoặc promote điều gì?
-            <textarea className={inputClass} rows={4} placeholder="Sản phẩm, dịch vụ, campaign, sự kiện hoặc offer" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone">
-            Target audience
-            <input className={inputClass} placeholder="Ai cần biết, tin hoặc nói về điều này?" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone">
-            Target channel/community
-            <input className={inputClass} placeholder="Group Facebook, TikTok, forum, cộng đồng địa phương..." />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone">
-            Timeline
-            <input className={inputClass} placeholder="Ngày launch hoặc khoảng thời gian campaign" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone">
-            Budget range optional
-            <input className={inputClass} placeholder="Không bắt buộc" />
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone md:col-span-2">
-            Campaign type
-            <select className={inputClass} defaultValue="">
-              <option value="" disabled>
-                Chọn một loại
-              </option>
-              <option>Launch</option>
-              <option>Awareness</option>
-              <option>Social proof</option>
-              <option>Hỗ trợ campaign</option>
-              <option>Hỗ trợ danh tiếng</option>
-            </select>
-          </label>
-          <label className="grid gap-2 text-sm font-medium text-bone md:col-span-2">
-            Có topic nhạy cảm hoặc compliance issue nào không?
-            <textarea className={inputClass} rows={4} placeholder="Cho Egoric biết điều gì cần xử lý thận trọng" />
-          </label>
-          <div className="md:col-span-2">
-            <button
-              type="button"
-              className="button-shine rounded-full bg-champagne px-7 py-4 text-sm font-bold text-obsidian shadow-glow transition hover:bg-bone"
-            >
-              Gửi campaign brief
-            </button>
-          </div>
-        </form>
+        <ContactBriefForm />
       </SectionShell>
     </main>
   );

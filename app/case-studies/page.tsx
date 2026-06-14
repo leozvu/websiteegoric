@@ -5,8 +5,8 @@ import { Reporting } from "@/components/sections/reporting";
 import { caseStudies } from "@/lib/content";
 
 export const metadata = {
-  title: "Case Study",
-  description: "Case study format cho product launch, awareness và campaign conversation support."
+  title: "Engagement Scenarios",
+  description: "Engagement scenarios cho product launch, awareness và campaign conversation support."
 };
 
 const evidence = [
@@ -21,11 +21,11 @@ export default function CaseStudiesPage() {
   return (
     <main>
       <PageHero
-        eyebrow="Case Study"
-        title="Case format cho brand cần market signal."
-        intro="Những case này là placeholder có structure. Khi có dữ liệu thật, chỉ cần thay challenge, move, signal và campaign evidence."
+        eyebrow="Engagement Scenarios"
+        title="Scenario cho brand cần market signal rõ hơn."
+        intro="Egoric trình bày work theo challenge, move, signal và campaign evidence. Khi có dữ liệu thật, phần này nên dùng verified signal thay vì claim phóng đại."
         stats={[
-          { value: "03", label: "Sample cases" },
+          { value: "03", label: "Core scenarios" },
           { value: "05", label: "Evidence types" },
           { value: "0", label: "Hứa viral giả" }
         ]}
@@ -33,9 +33,9 @@ export default function CaseStudiesPage() {
       <CaseStudies />
 
       <SectionShell
-        eyebrow="Case Structure"
-        title="Mỗi case nên chứng minh conversation movement, không chỉ activity count."
-        intro="Case study tốt cần cho thấy communication problem, cách Egoric design conversation layer và market signal sau khi triển khai."
+        eyebrow="Scenario Structure"
+        title="Mỗi engagement nên chứng minh movement, không chỉ activity count."
+        intro="Một engagement tốt cần cho thấy communication problem, cách Egoric design conversation layer và market signal sau khi triển khai."
       >
         <div className="grid gap-4 lg:grid-cols-3">
           {caseStudies.map((study, index) => (

@@ -3,7 +3,7 @@ export const navItems = [
   { label: "Egoric", href: "/about" },
   { label: "Seeding Services", href: "/seeding-services" },
   { label: "Method", href: "/method" },
-  { label: "Case Study", href: "/case-studies" },
+  { label: "Scenarios", href: "/case-studies" },
   { label: "Contact", href: "/contact" }
 ];
 
@@ -149,21 +149,21 @@ export const audienceCards = [
 export const caseStudies = [
   {
     title: "Product Launch Seeding",
-    challenge: "Một sản phẩm tiêu dùng mới cần tạo early buzz trước ngày launch.",
+    challenge: "Một sản phẩm tiêu dùng mới cần tạo early conversation trước ngày launch.",
     move: "Egoric map audience community, tạo message angle và activate seeding wave theo phase.",
-    outcome: "Tăng visible conversation, cải thiện launch-day engagement và tạo social proof ban đầu."
+    outcome: "Visible conversation rõ hơn, launch-day discussion có context hơn và social proof ban đầu sạch hơn."
   },
   {
     title: "Awareness Cho SME Dịch Vụ",
     challenge: "Một doanh nghiệp dịch vụ có organic conversation yếu và tín hiệu tin cậy thấp.",
     move: "Egoric tạo community topic và social proof comment bám sát mối quan tâm thật của khách hàng.",
-    outcome: "Tăng inquiry liên quan hơn và cải thiện trust signal."
+    outcome: "Inquiry liên quan hơn, trust signal rõ hơn và objection được xử lý tự nhiên hơn."
   },
   {
     title: "Campaign Conversation Support",
     challenge: "Một paid media campaign có reach nhưng thiếu quality conversation.",
     move: "Egoric thêm seeding layer quanh key post, community context và objection response angle.",
-    outcome: "Comment quality tốt hơn, discussion depth sâu hơn và campaign có momentum rõ hơn."
+    outcome: "Comment quality tốt hơn, discussion depth sâu hơn và campaign có conversation momentum rõ hơn."
   }
 ];
 

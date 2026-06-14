@@ -12,7 +12,7 @@ export function TrustSection() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-champagne">Trust Standard</p>
             <h2 className="text-balance mt-4 font-serif text-4xl font-semibold text-bone sm:text-5xl">
-              Strategic support, không xây trên fake proof.
+              Strategic support, không xây trên proof giả.
             </h2>
             <p className="text-pretty mt-5 max-w-4xl text-base leading-8 text-silver">
               Egoric không xây campaign trên review giả, mạo danh, quấy rối hoặc thông tin sai lệch gây hại.

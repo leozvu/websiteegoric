@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Egoric Agency"
   },
   description:
-    "Egoric Agency thiết kế strategic seeding campaign, community seeding, social proof và conversation layer có kiểm soát cho launch, campaign và market perception.",
+    "Egoric Agency thiết kế strategic seeding campaign, DODS model, community seeding, social proof và conversation layer có kiểm soát cho launch, campaign và market perception.",
   keywords: [
     "agency seeding chiến lược",
     "dịch vụ seeding",
@@ -33,6 +33,8 @@ export const metadata: Metadata = {
     "seeding ra mắt sản phẩm",
     "seeding social proof",
     "conversation seeding",
+    "DODS seeding",
+    "digital influence agency Vietnam",
     "market perception support",
     "seeding campaign",
     "agency seeding Việt Nam",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Egoric Agency | Strategic Seeding Studio",
     description:
-      "Tạo conversation momentum có kiểm soát cho launch, community và market perception.",
+      "Tạo conversation momentum có kiểm soát bằng strategic seeding, DODS model và market signal planning.",
     type: "website"
   }
 };
