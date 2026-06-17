@@ -14,7 +14,10 @@ const evidence = [
   "Community/channel selected",
   "Message angle deployed",
   "Market reaction highlight",
-  "Learning & next-step recommendation"
+  "Learning & next-step recommendation",
+  "Risk or compliance note",
+  "Screenshot evidence when relevant",
+  "Post-campaign insight"
 ];
 
 export default function CaseStudiesPage() {
@@ -56,10 +59,11 @@ export default function CaseStudiesPage() {
         eyebrow="Campaign Evidence"
         title="Khi thay case thật, hãy dùng verified signal."
         intro="Egoric tránh kể case theo kiểu phóng đại. Nội dung nên dựa trên tín hiệu quan sát được và insight sau campaign."
+        headerClassName="max-w-6xl"
       >
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {evidence.map((item) => (
-            <div key={item} className="rounded border border-white/10 bg-white/[0.035] p-5">
+            <div key={item} className="premium-card min-h-32 rounded border border-white/10 bg-white/[0.035] p-5">
               <p className="phrase-lock text-sm font-medium leading-7 text-bone">{item}</p>
             </div>
           ))}

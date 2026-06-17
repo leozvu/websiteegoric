@@ -17,7 +17,9 @@ const packageFlow = [
   "Design message angle",
   "Build seeding script",
   "Activate by wave",
-  "Monitor & report"
+  "Monitor & report",
+  "Align risk boundary",
+  "Recommend next sprint"
 ];
 
 const decisionRows = [
@@ -101,10 +103,11 @@ export default function SeedingServicesPage() {
         eyebrow="Service Flow"
         title="Từ brief đến report, mọi thứ cần structure."
         intro="Một seeding campaign tốt không bắt đầu bằng việc viết comment. Nó bắt đầu bằng việc hiểu objective và market."
+        headerClassName="max-w-6xl"
       >
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {packageFlow.map((item, index) => (
-            <div key={item} className="rounded border border-white/10 bg-obsidian/60 p-4">
+            <div key={item} className="premium-card min-h-32 rounded border border-white/10 bg-obsidian/60 p-4">
               <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
               <p className="phrase-lock mt-4 text-sm font-medium leading-6 text-bone">{item}</p>
             </div>

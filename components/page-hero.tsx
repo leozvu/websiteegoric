@@ -24,14 +24,14 @@ export function PageHero({ eyebrow, title, intro, stats, className }: PageHeroPr
         className="absolute right-0 top-16 hidden h-[520px] w-[62vw] object-cover opacity-10 mix-blend-screen motion-reduce:hidden lg:block"
       />
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-champagne/45 to-transparent" />
-      <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center xl:grid-cols-[1.35fr_0.65fr]">
         <div>
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-champagne">{eyebrow}</p>
-          <h1 className="max-w-5xl text-balance font-serif text-4xl font-semibold leading-[0.96] text-bone sm:text-6xl lg:text-7xl">
+          <h1 className="semantic-heading max-w-6xl text-balance font-serif text-[clamp(3rem,5.7vw,6.9rem)] font-semibold leading-[0.95] text-bone">
             {title}
           </h1>
         </div>
-        <div className="rounded border border-white/10 bg-obsidian/62 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur">
+        <div className="premium-card rounded border border-white/10 bg-obsidian/62 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur">
           <div className="mb-6 hidden lg:block">
             <CinematicSignalMedia compact />
           </div>

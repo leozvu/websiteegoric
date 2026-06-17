@@ -7,13 +7,21 @@ export function ServiceOverview() {
     <SectionShell
       id="services"
       eyebrow="What Egoric Does"
-      title="Chúng tôi build market signal phía sau campaign của bạn."
-      intro="Sáu seeding module tập trung. Không full-service marketing, không spam rẻ tiền, không activity rỗng."
+      title={
+        <>
+          <span className="block lg:whitespace-nowrap">Egoric build market signal</span>
+          <span className="block lg:whitespace-nowrap">phía sau campaign.</span>
+        </>
+      }
+      intro="Sáu seeding module tập trung. Không full-service marketing. Không spam rẻ tiền. Không activity rỗng."
+      headerClassName="max-w-6xl"
+      titleClassName="lg:text-[clamp(3.4rem,5.1vw,6rem)]"
+      introClassName="max-w-5xl"
     >
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {services.map((service, index) => (
           <Reveal key={service.title} delay={index * 0.04}>
-            <article className="glass min-h-[360px] rounded p-6 transition duration-500 hover:border-champagne/35">
+            <article className="premium-card glass min-h-[360px] rounded p-6 transition duration-500 hover:border-champagne/35">
               <div className="mb-10 flex items-start justify-between">
                 <span className="text-xs font-semibold uppercase tracking-[0.28em] text-champagne">
                   {String(index + 1).padStart(2, "0")}

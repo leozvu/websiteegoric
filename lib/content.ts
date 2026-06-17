@@ -137,13 +137,14 @@ export const methodSteps = [
 ];
 
 export const audienceCards = [
-  "Brand mới chuẩn bị go-to-market",
+  "Brand mới chuẩn bị launch",
   "Sản phẩm cần early trust",
   "SME bước vào category cạnh tranh",
   "Founder chuẩn bị launch",
   "Campaign team cần conversation momentum",
   "Thương hiệu có ít organic conversation",
-  "Brand cần perception support có kiểm soát"
+  "Brand cần perception support có kiểm soát",
+  "Team cần proof layer trước khi scale ads"
 ];
 
 export const caseStudies = [
@@ -186,7 +187,8 @@ export const whyPoints = [
   "Bám campaign objective.",
   "Kiểm soát tone, risk và compliance.",
   "Report insight, không chỉ activity.",
-  "Xem seeding như một communication system."
+  "Xem seeding như một communication system.",
+  "Giữ market signal sạch trước khi scale."
 ];
 
 export const signalFlow = [
@@ -196,5 +198,6 @@ export const signalFlow = [
   "Community Placement",
   "Conversation Flow",
   "Sentiment Signal",
-  "Campaign Report"
+  "Risk Boundary",
+  "Insight Loop"
 ];

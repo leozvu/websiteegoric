@@ -15,7 +15,10 @@ const controls = [
   "Mức độ nhạy cảm của topic",
   "Community context trước placement",
   "Friction point, objection và câu hỏi lặp lại",
-  "Compliance boundary và thông tin được phép nói"
+  "Compliance boundary và thông tin được phép nói",
+  "Response path khi sentiment đổi hướng",
+  "Escalation note cho topic nhạy cảm",
+  "Insight loop sau mỗi seeding wave"
 ];
 
 export default function MethodPage() {
@@ -54,10 +57,11 @@ export default function MethodPage() {
         eyebrow="Risk Control"
         title="Seeding tốt không chỉ tạo conversation. Nó giữ conversation đi đúng hướng."
         intro="Egoric đặt control layer để brand không bị kéo vào cuộc trò chuyện sai context."
+        headerClassName="max-w-6xl"
       >
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {controls.map((item) => (
-            <div key={item} className="rounded border border-white/10 bg-obsidian/60 p-5">
+            <div key={item} className="premium-card min-h-32 rounded border border-white/10 bg-obsidian/60 p-5">
               <p className="phrase-lock text-sm font-medium leading-7 text-bone">{item}</p>
             </div>
           ))}
